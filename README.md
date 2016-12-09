@@ -12,6 +12,7 @@ Fast, light and responsive lightbox plugin, for jQuery and Zepto.js.
 Optionally, install via Bower `bower install magnific-popup` or npm: `npm install magnific-popup`.
 [Ruby gem](https://rubygems.org/gems/magnific-popup-rails): `gem install magnific-popup-rails`.
 
+
 ## Extensions
 
 - WordPress plugin - [under development](http://dimsemenov.com/plugins/magnific-popup/wordpress.html).
@@ -38,28 +39,30 @@ If you used Magnific Popup in some interesting way, or on site of popular brand,
 
 ## Build 
 
-To compile Magnific Popup by yourself, first of make sure that you have [Node.js](http://nodejs.org/), [Grunt.js](https://github.com/cowboy/grunt), [Ruby](http://www.ruby-lang.org/) and [Jekyll](https://github.com/mojombo/jekyll/) installed, then:
+Original Magnific-Pop from Here(https://github.com/dimsemenov/Magnific-Popup)
 
 1) Copy repository
 
-	git clone https://github.com/dimsemenov/Magnific-Popup.git
-
-2) Go inside Magnific Popup folder that you fetched and install Node dependencies
-
-	cd Magnific-Popup && npm install
-
-3) Now simply run `grunt` to generate JS and CSS in folder `dist` and site in folder `_site/`.
-
-	grunt
-
-Optionally:
-
-- Run `grunt watch` to automatically rebuild script when you change files in `src/` or in `website/`.
-- If you don't have and don't want to install Jekyll, run `grunt nosite` to just build JS and CSS files related to popup in `dist/`.
+	git clone https://github.com/SiyeolBaek/Magnific-Popup.git
 
 
+## Usage(only Naver Tvcast)
+
+1. Copy Video's iframe share code
+
+	```
+<iframe src='http://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=BE321B33E1E6EE82E1D26AE103366ED235C6&outKey=V1273992fe2df5898548820d7d30b154282768740399982c4c6ba20d7d30b15428276&controlBarMovable=true&jsCallable=true&isAutoPlay=true&skinName=tvcast_white' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='544' HEIGHT='306' allowfullscreen></iframe>
+	```
+2. Extract url from code's src
+
+	```
+http://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=BE321B33E1E6EE82E1D26AE103366ED235C6&outKey=V1273992fe2df5898548820d7d30b154282768740399982c4c6ba20d7d30b15428276&controlBarMovable=true&jsCallable=true&isAutoPlay=true&skinName=tvcast_white
+	```
+3. Use this url (like Original)
 
 ## [Changelog](https://github.com/dimsemenov/Magnific-Popup/releases)
+
+v1.2.0 - Add Naver Tvcast for video popup
 
 ## License
 
