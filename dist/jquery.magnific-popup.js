@@ -1591,6 +1591,12 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 			gmaps: {
 				index: '//maps.google.',
 				src: '%id%&output=embed'
+			},
+			navercast: {
+				index: 'serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn',
+				id: 'vid=',
+				key: 'outKey=',
+				src: '//serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=%id%&outKey=%key%'
 			}
 		}
 	},
